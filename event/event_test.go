@@ -36,5 +36,7 @@ func (listener *TestListener)Register()  {
 
 func TestPost(t *testing.T) {
 	event := &TestEvent{name: "testEvent", data: "test data", time: time.Now()}
+
+
 	Post(event)
 }
