@@ -6,11 +6,13 @@ import (
 )
 
 type Event interface {
+	Name() string
 }
 
 type Listener interface {
-	handler(event Event)
-	register()
+	Name() string
+	Handler(event Event)
+	Register()
 }
 
 func Register(listener Listener, event Event) {
@@ -51,7 +53,7 @@ func dispatch(event Event) {
 
 	for _, v := range listenerSlice {
 		go func() {
-			v.handler(event)
+			v.Handler(event)
 		}()
 	}
 }

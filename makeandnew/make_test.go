@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestNew1(t *testing.T)  {
+func TestNew1(t *testing.T) {
 	i := new(int)
 
 	var v int
@@ -16,7 +16,7 @@ func TestNew1(t *testing.T)  {
 	fmt.Println(reflect.TypeOf(j))
 }
 
-func TestMake1(t *testing.T)  {
+func TestMake1(t *testing.T) {
 	s := make([]int, 2, 10)
 	m := make(map[string]int, 10)
 	c := make(chan int, 5)
