@@ -1,21 +1,39 @@
 package http
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"net/url"
+	"os"
 	"sync"
 	"testing"
 	"time"
 )
 
 // 访问总数
-const N int = 10000
+const N int = 100
 
 // 并发数
-const C int = 1000
+const C int = 10
+
+type config struct {
+	url string
+	total int
+	clientNum int
+}
 
 func TestLogin(t *testing.T) {
+	// todo 配置文件读取信息
+	file, _ := os.Open("config.json")
+	defer file.Close()
+
+	decoder := json.NewDecoder(file)
+
+	c := config{}
+	decoder.Decode(&c)
+	fmt.Println(c)
+
 	group := &sync.WaitGroup{}
 	group.Add(N)
 
