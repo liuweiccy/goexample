@@ -21,9 +21,13 @@ func TestEventBus(t *testing.T) {
 		wait.Done()
 	})
 
-	_ = eventBus.Subscribe("test", func(wait *sync.WaitGroup) {
+	err := eventBus.Subscribe("test", func(wait *sync.WaitGroup) {
 		wait.Done()
 	})
+
+	if err != nil {
+		fmt.Println("发生错误：", err)
+	}
 
 	for i := 0; i < N/2; i++ {
 		eventBus.Publish("vv", wait)
