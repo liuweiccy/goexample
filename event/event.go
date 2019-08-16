@@ -1,5 +1,7 @@
 package event
 
+// TODO 功能开发尚未完成
+
 import (
 	"reflect"
 	"sync"

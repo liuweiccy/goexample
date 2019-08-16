@@ -1,49 +1,33 @@
 package http
 
 import (
-	"encoding/json"
 	"fmt"
+	"github.com/panjf2000/ants"
 	"net/http"
 	"net/url"
-	"os"
 	"sync"
 	"testing"
 	"time"
 )
 
 // 访问总数
-const N int = 100
+const N int = 1000
 
 // 并发数
-const C int = 10
-
-type config struct {
-	url string
-	total int
-	clientNum int
-}
+const C int = 10000
 
 func TestLogin(t *testing.T) {
-	// todo 配置文件读取信息
-	file, _ := os.Open("config.json")
-	defer file.Close()
-
-	decoder := json.NewDecoder(file)
-
-	c := config{}
-	decoder.Decode(&c)
-	fmt.Println(c)
+	defer ants.Release()
+	pool, _ := ants.NewPool(C)
 
 	group := &sync.WaitGroup{}
 	group.Add(N)
 
 	s := time.Now()
-	for i := 0; i < C; i++ {
-		go func() {
-			for i := 0; i < N/C; i++ {
-				testRequest(group)
-			}
-		}()
+	for i := 0; i < N; i++ {
+		_ = pool.Submit(func() {
+			testRequest(group)
+		})
 	}
 
 	group.Wait()
@@ -59,11 +43,4 @@ func testRequest(group *sync.WaitGroup) {
 	args.Set("token", "66684A8B3733498AA5289D068DA96637")
 	_, _ = http.PostForm("http://192.168.20.97:8081/ws/logininfo", args)
 	group.Done()
-	//response, err := http.PostForm("http://192.168.20.97:8081/ws/logininfo", args)
-	//if err != nil {
-	//	fmt.Println("请求http地址发生错误：")
-	//}
-	// defer response.Body.Close()
-	// body, _ := ioutil.ReadAll(response.Body)
-	// fmt.Println(string(body))
 }

@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-const N int  = 1000000
+const N int  = 10000000
 
 func TestEventBus(t *testing.T) {
 	eventBus := EventBus.New()
