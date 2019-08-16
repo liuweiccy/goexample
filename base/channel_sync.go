@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ func worker(done chan bool) {
 	done <- true
 }
 
-func main() {
+func _() {
 	done := make(chan bool, 1)
 	go worker(done)
 	fmt.Println(<-done)

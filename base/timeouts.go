@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func _() {
 	c1 := make(chan string, 1)
 	go func() {
 		time.Sleep(time.Second * 2)

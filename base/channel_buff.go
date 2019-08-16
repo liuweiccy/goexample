@@ -1,8 +1,8 @@
-package main
+package base
 
 import "fmt"
 
-func main() {
+func _() {
 	message := make(chan string, 2)
 
 	message <- "buffered"

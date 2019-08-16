@@ -1,4 +1,4 @@
-package main
+package base
 
 import "fmt"
 
@@ -11,7 +11,7 @@ func pong(pings <-chan string, pongs chan<- string) {
 	pongs <- msg
 }
 
-func main() {
+func _() {
 	pings := make(chan string, 1)
 	pongs := make(chan string, 1)
 	ping(pings, "Passed Message")

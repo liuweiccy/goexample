@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"sort"
 )
 
-func main() {
+func _() {
 	strs := []string{"c", "b", "a"}
 	sort.Strings(strs)
 	fmt.Println("Strings:", strs)

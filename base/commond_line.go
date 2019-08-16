@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"os"
 )
 
-func main() {
+func _() {
 	argsWithProg := os.Args
 	argsWithoutProg := os.Args[1:]
 

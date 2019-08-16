@@ -1,8 +1,8 @@
-package main
+package base
 
 import "fmt"
 
-func main() {
+func _() {
 	jobs := make(chan int, 5)
 	done := make(chan bool)
 

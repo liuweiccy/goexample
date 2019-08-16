@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"bufio"
@@ -14,7 +14,7 @@ func Check(err error) {
 	}
 }
 
-func main() {
+func _() {
 	dat, err := ioutil.ReadFile("/tmp/dat")
 	Check(err)
 	fmt.Print(string(dat))

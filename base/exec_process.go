@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"os"
@@ -6,7 +6,7 @@ import (
 	"syscall"
 )
 
-func main() {
+func _() {
 	binary, lookErr := exec.LookPath("ls")
 	if lookErr != nil {
 		panic(lookErr)

@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func _() {
 	var ops uint64
 
 	for i := 0; i < 50; i++ {

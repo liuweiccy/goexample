@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func main() {
+func _() {
 	var state = make(map[int]int)
 	var mutex = &sync.Mutex{}
 

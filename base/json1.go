@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"encoding/json"
@@ -16,7 +16,7 @@ type response2 struct {
 	Fruits []string "json:\"fruits\""
 }
 
-func main() {
+func _() {
 	bolB, _ := json.Marshal(true)
 	fmt.Println(string((bolB)))
 

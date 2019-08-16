@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"syscall"
 )
 
-func main() {
+func _() {
 	sigs := make(chan os.Signal, 1)
 	done := make(chan bool, 1)
 

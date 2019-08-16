@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"bufio"
@@ -13,7 +13,7 @@ func check(err error) {
 	}
 }
 
-func main() {
+func _() {
 	d1 := []byte("hello\ngo\n")
 	err := ioutil.WriteFile("/tmp/dat", d1, 0644)
 	check(err)

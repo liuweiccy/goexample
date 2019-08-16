@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ func worker1(id int, jobs <-chan int, results chan<- int) {
 	}
 }
 
-func main() {
+func _() {
 	jobs := make(chan int, 100)
 	results := make(chan int, 100)
 

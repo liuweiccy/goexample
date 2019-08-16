@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"os"
 )
 
-func main() {
+func _() {
 	defer func() {
 		r := recover()
 		fmt.Println(r)

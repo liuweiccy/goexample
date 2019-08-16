@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"flag"
 	"fmt"
 )
 
-func main() {
+func _() {
 	wordPtr := flag.String("word", "foo", "s string")
 
 	numbPtr := flag.Int("numb", 42, "an int")

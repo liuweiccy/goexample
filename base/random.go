@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func _() {
 	fmt.Print(rand.Intn(100), ",")
 	fmt.Println(rand.Intn(100))
 

@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func _() {
 	p := fmt.Println
 
 	t := time.Now()

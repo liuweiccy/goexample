@@ -1,8 +1,8 @@
-package main
+package base
 
 import "fmt"
 
-func main() {
+func _() {
 	i := 1
 	for i <= 3 {
 		fmt.Println(i)

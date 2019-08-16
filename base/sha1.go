@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"crypto/sha1"
 	"fmt"
 )
 
-func main() {
+func _() {
 	s := "sha this string"
 
 	h := sha1.New()

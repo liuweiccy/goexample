@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"net/url"
 )
 
-func main() {
+func _() {
 	s := "posrgres://user:pass@host.com:8080/path?k=v#f"
 
 	u, err := url.Parse(s)

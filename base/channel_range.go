@@ -1,8 +1,8 @@
-package main
+package base
 
 import "fmt"
 
-func main() {
+func _() {
 	queue := make(chan string, 2)
 	queue <- "one"
 	queue <- "two"

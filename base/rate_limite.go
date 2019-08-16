@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func _() {
 	request := make(chan int, 5)
 
 	for i := 1; i <= 5; i++ {

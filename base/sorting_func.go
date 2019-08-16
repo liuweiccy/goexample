@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ func (s byLength) Less(i, j int) bool {
 	return len(s[i]) < len(s[j])
 }
 
-func main() {
+func _() {
 	fruits := []string{"peach", "banana", "kiwi"}
 	sort.Sort(byLength(fruits))
 	fmt.Println(fruits)

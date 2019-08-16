@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"encoding/base64"
 	"fmt"
 )
 
-func main() {
+func _() {
 	data := "abc123!?$*&()'-=@~"
 	sEnc := base64.StdEncoding.EncodeToString([]byte(data))
 	fmt.Println(sEnc)

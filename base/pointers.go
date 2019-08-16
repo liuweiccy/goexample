@@ -1,4 +1,4 @@
-package main
+package base
 
 import "fmt"
 
@@ -10,7 +10,7 @@ func zeroptr(iptr *int) {
 	*iptr = 0
 }
 
-func main() {
+func _() {
 	i := 1
 	fmt.Println("init:", i)
 

@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"strconv"
 )
 
-func main() {
+func _() {
 	f, _ := strconv.ParseFloat("1.234", 64)
 	fmt.Println(f)
 

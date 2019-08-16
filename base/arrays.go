@@ -1,8 +1,8 @@
-package main
+package base
 
 import "fmt"
 
-func main() {
+func _() {
 	var a [5]int
 	fmt.Println(a)
 

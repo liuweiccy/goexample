@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -24,7 +24,7 @@ func closeFile(f *os.File) {
 	f.Close()
 }
 
-func main() {
+func _() {
 	f := createFile("/tmp/defer.txt")
 	defer closeFile(f)
 	writeFile(f)

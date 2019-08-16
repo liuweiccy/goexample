@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -18,7 +18,7 @@ type writeOp struct {
 	resp chan bool
 }
 
-func main() {
+func _() {
 	var readOps uint64
 	var writeOps uint64
 

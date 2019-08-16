@@ -1,4 +1,4 @@
-package main
+package base
 
 import "fmt"
 
@@ -8,7 +8,7 @@ func f(from string) {
 	}
 }
 
-func main() {
+func _() {
 	f("direct")
 
 	go f("goroutine")

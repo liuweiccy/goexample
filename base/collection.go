@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"fmt"
@@ -55,7 +55,7 @@ func Map(vs []string, f func(string) string) []string {
 	return vsm
 }
 
-func main() {
+func _() {
 	var strs = []string{"peach", "apple", "pear", "plum"}
 	fmt.Println(Index(strs, "pear"))
 	fmt.Println(Include(strs, "grape"))

@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func _() {
 	timer := time.NewTimer(time.Second * 2)
 
 	<-timer.C

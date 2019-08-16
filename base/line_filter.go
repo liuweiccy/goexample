@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func _() {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for scanner.Scan() {

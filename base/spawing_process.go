@@ -1,10 +1,10 @@
-package main
+package base
 
 import "fmt"
 import "io/ioutil"
 import "os/exec"
 
-func main() {
+func _() {
 
 	dateCmd := exec.Command("date")
 

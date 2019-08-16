@@ -1,11 +1,11 @@
-package main
+package base
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func _() {
 	ticker := time.NewTicker(time.Millisecond * 500)
 
 	go func() {

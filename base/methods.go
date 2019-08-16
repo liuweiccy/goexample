@@ -1,4 +1,4 @@
-package main
+package base
 
 import "fmt"
 
@@ -14,7 +14,7 @@ func (r rect) perim() float64 {
 	return (r.height + r.width) * 2
 }
 
-func main() {
+func _() {
 	r := rect{width: 10, height: 5}
 
 	fmt.Println("area: ", r.area())

@@ -1,8 +1,8 @@
-package main
+package base
 
 import "fmt"
 
-func main() {
+func _() {
 	s := make([]string, 3)
 	fmt.Println("emp:", s)
 

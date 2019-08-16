@@ -1,4 +1,4 @@
-package main
+package base
 
 import (
 	"bytes"
@@ -6,7 +6,7 @@ import (
 	"regexp"
 )
 
-func main() {
+func _() {
 	match, _ := regexp.MatchString("p([a-z]+)ch", "peach")
 	fmt.Println(match)
 

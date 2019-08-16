@@ -1,4 +1,4 @@
-package main
+package base
 
 import "fmt"
 
@@ -7,7 +7,7 @@ type person struct {
 	age  int
 }
 
-func main() {
+func _() {
 	fmt.Println(person{"Bob", 20})
 	fmt.Println(person{name: "Alice", age: 30})
 	fmt.Println(person{name: "Fred"})
