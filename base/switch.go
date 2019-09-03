@@ -40,7 +40,7 @@ func _() {
 		case int:
 			fmt.Println("I'm a int")
 		default:
-			fmt.Printf("Don't knoe type %T \n", t)
+			fmt.Printf("Don't knoe typeassert %T \n", t)
 		}
 	}
 

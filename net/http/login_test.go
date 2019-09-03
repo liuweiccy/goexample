@@ -39,7 +39,7 @@ func testRequest(group *sync.WaitGroup) {
 	args := url.Values{}
 	args.Set("clientType", "1")
 	args.Set("account", "4735744240362690")
-	args.Set("type", "1")
+	args.Set("typeassert", "1")
 	args.Set("token", "66684A8B3733498AA5289D068DA96637")
 	_, _ = http.PostForm("http://192.168.20.97:8081/ws/logininfo", args)
 	group.Done()
