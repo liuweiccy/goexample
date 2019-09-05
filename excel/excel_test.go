@@ -6,7 +6,6 @@ import (
 	"strconv"
 	"testing"
 )
-import "github.com/360EntSecGroup-Skylar/excelize/v2"
 
 func TestReadExcel(t *testing.T) {
 	path := "./testData.xlsx"
