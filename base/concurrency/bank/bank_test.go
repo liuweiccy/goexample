@@ -19,3 +19,10 @@ func TestDeposit(t *testing.T) {
 
 	time.Sleep(time.Second)
 }
+
+func TestInit(t *testing.T) {
+	Init()
+
+	Deposit1(100)
+	fmt.Printf("余额：%6d\n", Balance1())
+}
