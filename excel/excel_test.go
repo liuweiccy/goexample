@@ -2,6 +2,7 @@ package excel
 
 import (
 	"fmt"
+	"github.com/360EntSecGroup-Skylar/excelize"
 	"os"
 	"strconv"
 	"testing"
@@ -17,7 +18,7 @@ func TestReadExcel(t *testing.T) {
 
 	sheetMap := file.GetSheetMap()
 	for _, v := range sheetMap {
-		row, _ := file.GetRows(v)
+		row := file.GetRows(v)
 		var sum = 0.0
 		for _, cell := range row {
 			c, err := strconv.ParseFloat(cell[0], 64)

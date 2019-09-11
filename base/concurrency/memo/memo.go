@@ -3,7 +3,6 @@ package memo
 import (
 	"io/ioutil"
 	"net/http"
-	"runtime"
 	"sync"
 )
 
@@ -53,6 +52,5 @@ func httpGetBody(url string) (interface{}, error) {
 	}
 
 	defer resp.Body.Close()
-	runtime.GOMAXPROCS()
 	return ioutil.ReadAll(resp.Body)
 }

@@ -14,7 +14,7 @@ import (
 const N int = 1000
 
 // 并发数
-const C int = 10000
+const C int = 100
 
 func TestLogin(t *testing.T) {
 	defer ants.Release()

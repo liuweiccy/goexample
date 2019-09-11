@@ -1,3 +1,14 @@
-github.com/360EntSecGroup-Skylar/excelize/v2 v2.0.1 h1:gnknz1/4RnpL2fZsJzsqsGHgjWDT7k11tGPsFiDQeDk=
+github.com/360EntSecGroup-Skylar/excelize v1.4.1 h1:l55mJb6rkkaUzOpSsgEeKYtS6/0gHwBYyfo5Jcjv/Ks=
+github.com/360EntSecGroup-Skylar/excelize v1.4.1/go.mod h1:vnax29X2usfl7HHkBrX5EvSCJcmH3dT9luvxzu8iGAE=
 github.com/asaskevich/EventBus v0.0.0-20180315140547-d46933a94f05 h1:Shem5lRG4gJyrrg9YMIl7dOQazyWCq0Daz4LjompZ28=
 github.com/asaskevich/EventBus v0.0.0-20180315140547-d46933a94f05/go.mod h1:JS7hed4L1fj0hXcyEejnW57/7LCetXggd+vwrRnYeII=
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 h1:RWengNIwukTxcDr9M+97sNutRR1RKhG96O6jWumTTnw=
+github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826/go.mod h1:TaXosZuwdSHYgviHp1DAtfrULt5eUgsSMsZf+YrPgl8=
+github.com/panjf2000/ants v1.2.0 h1:Ufw4aDz9RqH1RVblx2W9L9Uv5vSX5apbX5+peR7LQ5k=
+github.com/panjf2000/ants v1.2.0/go.mod h1:AaACblRPzq35m1g3enqYcxspbbiOJJYaxU2wMpm1cXY=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/testify v1.2.3-0.20181224173747-660f15d67dbb h1:cRItZejS4Ok67vfCdrbGIaqk86wmtQNOjVD7jSyS2aw=
+github.com/stretchr/testify v1.2.3-0.20181224173747-660f15d67dbb/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
