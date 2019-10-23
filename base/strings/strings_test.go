@@ -24,3 +24,17 @@ func TestLimitReader(t *testing.T) {
 	n, err = r.Read(b2)
 	fmt.Printf("b2读取到的字节数：%d,字符串：%s,错误：%v\n", n, string(b1), err)
 }
+
+func BenchmarkStringAdd(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		s := ""
+		for i := 0; i < 10; i++ {
+			s += string(i)
+		}
+		print(s)
+	}
+}
+
+func print(s string)  {
+
+}
