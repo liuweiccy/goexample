@@ -4,6 +4,7 @@ import "unicode"
 
 func IsPalindrome(s string) bool {
 	var letters []rune
+	// 提前进行内存分配，避免在append时，多次扩容分配内存
 	letters = make([]rune, 0, len(s))
 
 	for _, r := range s {
