@@ -1,0 +1,4 @@
+package unsafe
+
+func Print() {
+}
