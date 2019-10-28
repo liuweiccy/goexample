@@ -1,0 +1,4 @@
+package uberguide
+
+func Base() {
+}
