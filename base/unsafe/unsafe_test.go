@@ -2,6 +2,8 @@ package unsafe
 
 import (
 	"fmt"
+	"reflect"
+	"strings"
 	"testing"
 	"unsafe"
 )
@@ -109,7 +111,7 @@ func TestFloat64Bits(t *testing.T) {
 }
 
 func TestPrint4(t *testing.T) {
-	var x struct{
+	var x struct {
 		a bool
 		b int16
 		c []int
@@ -129,4 +131,22 @@ func TestPrint4(t *testing.T) {
 	pb1 := (*int16)(unsafe.Pointer(tmp))
 	*pb1 = 34
 	fmt.Println(x.b)
+}
+
+func TestPrint5(t *testing.T) {
+	got := strings.Split("a:b:c", ":")
+	want := []string{"a", "b", "c"}
+	if !reflect.DeepEqual(got, want) {
+		fmt.Println("不相等")
+	} else {
+		fmt.Println("相等")
+	}
+}
+
+func TestPrint6(t *testing.T) {
+	var a, b []string = nil, []string{}
+	fmt.Println(reflect.DeepEqual(a, b))
+
+	var c, d map[string]int = nil, make(map[string]int)
+	fmt.Println(reflect.DeepEqual(c, d))
 }
